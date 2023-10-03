@@ -1026,3 +1026,127 @@ address {
 .form-btn:hover {
     background-color: #404BBF;
 }
+
+/** Menu-header */
+
+.menu-header {
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    min-height: 640px;
+    background-color: #FFF;
+
+    padding: 72px 24px 40px 16px;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.menu-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-btn:hover .menu-close-icon {
+    fill: #ffffff;
+}
+
+.menu-close-btn:focus .menu-close-icon {
+    fill: #ffffff;
+}
+
+.menu-link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+}
+
+.menu-link {
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.menu-current-link {
+    color: #404BBF;
+}
+
+.menu-contacts {
+    margin-bottom: 48px;
+}
+
+.menu-contacts-list {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+}
+
+.menu-contacts-link {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.accent-contacts-link {
+    color: #4D5AE5;
+}
+
+.menu-social-list {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-social-icon {
+    fill: #F4F4FD;
+}
+
+.menu-social-link:focus,
+.menu-social-link:hover {
+    background-color: #404BBF;
+}
